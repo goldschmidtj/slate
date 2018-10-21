@@ -19,7 +19,7 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Vandelay Industries API! You can use our API to access manufacturing API endpoints, which can get information on various factories, machines, warehouses and inventory items in our database.
 
 We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -30,39 +30,39 @@ This example API documentation page was created with [Slate](https://github.com/
 > To authorize, use this code:
 
 ```ruby
-require 'kittn'
+require 'vandelay'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Vandelay::APIClient.authorize!('ringringring')
 ```
 
 ```python
-import kittn
+import vandelay
 
-api = kittn.authorize('meowmeowmeow')
+api = vandelay.authorize('ringringring')
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: ringringring"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const vandelay = require('vandelay');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = vandelay.authorize('ringringring');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `ringringring` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+Vandelay uses API keys to allow access to the API. You can register a new Vandelay API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Vandelay expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: ringringring`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>ringringring</code> with your personal API key.
 </aside>
 
 # Kittens
