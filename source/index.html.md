@@ -127,7 +127,7 @@ This endpoint retrieves all factories.
 Remember — to retrieve factories, you must first authenticate.
 </aside>
 
-## Get Machines
+## Get Factory Machines
 
 ```ruby
 require 'vandelay'
