@@ -172,7 +172,7 @@ This endpoint retrieves all machines for a given factory.
 
 ### HTTPS Request
 
-`GET https://api.vandelay.com/factories/<ID>/machines`
+`GET https://api.vandelay.com/factories/<factoryId>/machines`
 
 ### Query Parameters
 
@@ -182,6 +182,128 @@ factoryId | true | id for the Vandelay factory housing the machine
 
 <aside class="success">
 Remember — to retrieve machines, you must first authenticate.
+</aside>
+
+# Warehouses
+
+## Get Warehouses
+
+```ruby
+require 'vandelay'
+
+api = Vandelay::APIClient.authorize!('ringringring')
+api.warehouses.get()
+```
+
+```python
+import vandelay
+
+api = vandelay.authorize('ringringring')
+api.warehouses.get()
+```
+
+```shell
+curl "https://api.vandelay.com/warehouses"
+  -H "Authorization: ringringring"
+```
+
+```javascript
+const vandelay = require('vandelay');
+
+let api = vandelay.authorize('ringringring');
+let warehouses = api.warehouses.get();
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "id": 10, 
+    "name": "Pier 10 Holdings",
+    "description": "Key East Coast shipping/receiving location for 
+     storing finished product, ready for distribution."
+    "address": {
+      "buildingName": "Pier 10 East Coast Site",
+      "streetLine1": "1538 Saint Nicholas Avenue",
+      "streetLine2": "Apartment 5",
+      "city": "New York",
+      "stateProvince": "New York",
+      "zipPostalCode":  10033,
+      "country": "USA"
+      }
+   }
+  ]
+```
+
+This endpoint retrieves all warehouses.
+
+### HTTPS Request
+
+`GET https://api.vandelay.com/warehouses`
+
+<aside class="success">
+Remember — to retrieve warehouses, you must first authenticate.
+
+</aside>
+
+## Get Warehouse Items
+
+```ruby
+require 'vandelay'
+
+api = Vandelay::APIClient.authorize!('ringringring')
+api.warehouses.items.get(2)
+```
+
+```python
+import vandelay
+
+api = vandelay.authorize('ringringring')
+api.warehouses.items.get(2)
+```
+
+```shell
+curl "https://api.vandelay.com/warehouses/6/items"
+  -H "Authorization: ringringring"
+```
+
+```javascript
+const vandelay = require('vandelay');
+
+let api = vandelay.authorize('ringringring');
+let items = api.warehouses.items.get(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "warehouseId": 6,
+    "id": 55,
+    "SKU" "TG-AS-SEAL-B":
+    "quantity": 2,
+    "name": "Waterproof seal",
+    "description": "For sealing specimens to preserve them"
+    }
+  ]
+```
+
+This endpoint retrieves all items in the inventory for a given warehouse.
+
+### HTTPS Request
+
+`GET https://api.vandelay.com/warehouses/<warehouseId>/items`
+
+### Query Parameters
+
+Parameter | Required | Description
+--------- | ------- | -----------
+warehouseId | true | id for the Vandelay warehouse containing the items
+
+<aside class="success">
+Remember — to retrieve warehouse items, you must first authenticate.
 </aside>
 
 # Kittens
