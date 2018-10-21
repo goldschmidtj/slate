@@ -178,7 +178,7 @@ This endpoint retrieves all machines for a given factory.
 
 Parameter | Required | Description
 --------- | ------- | -----------
-factoryId | true | id for a Vandelay factory
+factoryId | true | id for the Vandelay factory housing the machine
 
 <aside class="success">
 Remember — to retrieve machines, you must first authenticate.
