@@ -25,6 +25,12 @@ We have language bindings in Shell, Ruby, Python, and JavaScript! You can view c
 
 This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
+# Versioning
+
+We use versioning to roll out new API features and ensure our versions are backwards compatible. The current version is 2018-10-21 (v1). Read our API upgrades guide to see our API changelog and to learn more about backwards compatibility.
+
+To set the API version on a specific request, send a Vandelay-Version header.
+
 # Authentication
 
 > To authorize, use this code:
