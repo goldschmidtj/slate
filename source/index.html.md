@@ -27,9 +27,7 @@ This example API documentation page was created with [Slate](https://github.com/
 
 # Versioning
 
-We use versioning to roll out new API features and ensure our versions are backwards compatible. The current version is 2018-10-21 (v1). Read our API upgrades guide to see our API changelog and to learn more about backwards compatibility.
-
-To set the API version on a specific request, send a Vandelay-Version header.
+We use versioning to roll out new API features and ensure our versions are backwards compatible. The current version is 2018-10-21 (v1).
 
 # Authentication
 
