@@ -75,6 +75,11 @@ Vandelay expects for the API key to be included in all API requests to the serve
 You must replace <code>ringringring</code> with your personal API key.
 </aside>
 
+# Idempotency
+
+The API supports idempotency for safely retrying requests without accidentally performing the same operation twice. This is useful when an API call is disrupted in transit and you do not receive a response. For example, if a request to create a charge fails due to a network connection error, you can retry the request with the same idempotency key to guarantee that only a single charge is created.
+
+
 # Factories
 
 ## Get Factories
