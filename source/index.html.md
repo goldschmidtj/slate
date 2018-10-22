@@ -61,7 +61,11 @@ let api = vandelay.authorize('ringringring');
 
 > Make sure to replace `ringringring` with your API key.
 
-Vandelay uses API keys to allow access to the API. You can register a new Vandelay API key at our [developer portal](https://api.vandelay.com/developers).
+Vandelay uses API keys to allow access to the API. Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth. 
+
+You can register a new Vandelay API key at our [developer portal](https://api.vandelay.com/developers).
+
+All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
 Vandelay expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
