@@ -131,7 +131,7 @@ let factories = api.factories.get();
 
 This endpoint retrieves all factories.
 
-### HTTPS Request
+### Request
 
 `GET https://vandelay.apivista.com/v1/factories`
 
@@ -182,7 +182,7 @@ let machines = api.machines.get(2);
 
 This endpoint retrieves all machines for a given factory.
 
-### HTTPS Request
+### Request
 
 `GET https://vandelay.apivista.com/v1/factories/<factoryId>/machines`
 
@@ -250,7 +250,7 @@ let warehouses = api.warehouses.get();
 
 This endpoint retrieves all warehouses.
 
-### HTTPS Request
+### Request
 
 `GET https://vandelay.apivista.com/v1/warehouses`
 
@@ -304,7 +304,7 @@ let items = api.warehouses.items.get(2);
 
 This endpoint retrieves all items in the inventory for a given warehouse.
 
-### HTTPS Request
+### Request
 
 `GET https://vandelay.apivista.com/v1/warehouses/<warehouseId>/items`
 
