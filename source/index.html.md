@@ -61,7 +61,7 @@ let api = vandelay.authorize('ringringring');
 
 Vandelay uses API keys to allow access to the API. Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth. 
 
-You can register a new Vandelay API key at our [developer portal](https://api.vandelay.com/developers).
+You can register a new Vandelay API key at our [developer portal](https://vandelay.apivista.com/developers).
 
 All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
@@ -96,7 +96,7 @@ api.factories.get()
 ```
 
 ```shell
-curl "https://api.vandelay.com/factories"
+curl "https://vandelay.apivista.com/factories"
   -H "Authorization: ringringring"
 ```
 
@@ -133,7 +133,7 @@ This endpoint retrieves all factories.
 
 ### HTTPS Request
 
-`GET https://api.vandelay.com/factories`
+`GET https://vandelay.apivista.com/factories`
 
 <aside class="success">
 Remember — to retrieve factories, you must first authenticate.
@@ -156,7 +156,7 @@ api.factory.machines.get(2)
 ```
 
 ```shell
-curl "https://api.vandelay.com/factories/2/machines"
+curl "https://vandelay.apivista.com/factories/2/machines"
   -H "Authorization: ringringring"
 ```
 
@@ -184,7 +184,7 @@ This endpoint retrieves all machines for a given factory.
 
 ### HTTPS Request
 
-`GET https://api.vandelay.com/factories/<factoryId>/machines`
+`GET https://vandelay.apivista.com/factories/<factoryId>/machines`
 
 ### Query Parameters
 
@@ -215,7 +215,7 @@ api.warehouses.get()
 ```
 
 ```shell
-curl "https://api.vandelay.com/warehouses"
+curl "https://vandelay.apivista.com/warehouses"
   -H "Authorization: ringringring"
 ```
 
@@ -252,7 +252,7 @@ This endpoint retrieves all warehouses.
 
 ### HTTPS Request
 
-`GET https://api.vandelay.com/warehouses`
+`GET https://vandelay.apivista.com/warehouses`
 
 <aside class="success">
 Remember — to retrieve warehouses, you must first authenticate.
@@ -276,7 +276,7 @@ api.warehouses.items.get(2)
 ```
 
 ```shell
-curl "https://api.vandelay.com/warehouses/6/items"
+curl "https://vandelay.apivista.com/warehouses/6/items"
   -H "Authorization: ringringring"
 ```
 
@@ -306,7 +306,7 @@ This endpoint retrieves all items in the inventory for a given warehouse.
 
 ### HTTPS Request
 
-`GET https://api.vandelay.com/warehouses/<warehouseId>/items`
+`GET https://vandelay.apivista.com/warehouses/<warehouseId>/items`
 
 ### Query Parameters
 
