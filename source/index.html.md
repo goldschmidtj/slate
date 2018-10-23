@@ -23,11 +23,11 @@ Welcome to the Vandelay Industries API! You can use our API to access manufactur
 
 We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate) and inspired by the awesome documentation over at [Stripe] (https://stripe.com/docs/api). Feel free to edit it and use it as a base for your own API's documentation.
+This example API documentation page was created with [Slate](https://github.com/lord/slate) and borrows from the awesome documentation over at [Stripe] (https://stripe.com/docs/api). Feel free to edit it and use it as a base for your own API's documentation.
 
 # Versioning
 
-We use versioning to roll out new API features and ensure our versions are backwards compatible. The current version is 2018-10-21 (v1).
+We use versioning to roll out new API features and ensure our versions are backwards compatible. The current version is 2018-10-21 (0.0.1).
 
 # Authentication
 
@@ -75,8 +75,7 @@ You must replace <code>ringringring</code> with your personal API key.
 
 # Idempotency
 
-The API supports idempotency for safely retrying requests without accidentally performing the same operation twice. This is useful when an API call is disrupted in transit and you do not receive a response. For example, if a request to create a charge fails due to a network connection error, you can retry the request with the same idempotency key to guarantee that only a single charge is created.
-
+The API supports idempotency for safely retrying requests without accidentally performing the same operation twice. This is useful when an API call is disrupted in transit and you do not receive a response. For example, if a request fails due to a network connection error, you can retry the request without generating duplicates.
 
 # Factories
 
