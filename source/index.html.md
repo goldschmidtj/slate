@@ -96,7 +96,7 @@ api.factories.get()
 ```
 
 ```shell
-curl "https://vandelay.apivista.com/factories"
+curl "https://vandelay.apivista.com//v1/factories"
   -H "Authorization: ringringring"
 ```
 
@@ -133,7 +133,7 @@ This endpoint retrieves all factories.
 
 ### HTTPS Request
 
-`GET https://vandelay.apivista.com/factories`
+`GET https://vandelay.apivista.com/v1/factories`
 
 <aside class="success">
 Remember — to retrieve factories, you must first authenticate.
@@ -156,7 +156,7 @@ api.factory.machines.get(2)
 ```
 
 ```shell
-curl "https://vandelay.apivista.com/factories/2/machines"
+curl "https://vandelay.apivista.com/v1/factories/2/machines"
   -H "Authorization: ringringring"
 ```
 
@@ -184,7 +184,7 @@ This endpoint retrieves all machines for a given factory.
 
 ### HTTPS Request
 
-`GET https://vandelay.apivista.com/factories/<factoryId>/machines`
+`GET https://vandelay.apivista.com/v1/factories/<factoryId>/machines`
 
 ### Query Parameters
 
@@ -215,7 +215,7 @@ api.warehouses.get()
 ```
 
 ```shell
-curl "https://vandelay.apivista.com/warehouses"
+curl "https://vandelay.apivista.com/v1/warehouses"
   -H "Authorization: ringringring"
 ```
 
@@ -252,7 +252,7 @@ This endpoint retrieves all warehouses.
 
 ### HTTPS Request
 
-`GET https://vandelay.apivista.com/warehouses`
+`GET https://vandelay.apivista.com/v1/warehouses`
 
 <aside class="success">
 Remember — to retrieve warehouses, you must first authenticate.
@@ -276,7 +276,7 @@ api.warehouses.items.get(2)
 ```
 
 ```shell
-curl "https://vandelay.apivista.com/warehouses/6/items"
+curl "https://vandelay.apivista.com/v1/warehouses/6/items"
   -H "Authorization: ringringring"
 ```
 
@@ -306,7 +306,7 @@ This endpoint retrieves all items in the inventory for a given warehouse.
 
 ### HTTPS Request
 
-`GET https://vandelay.apivista.com/warehouses/<warehouseId>/items`
+`GET https://vandelay.apivista.com/v1/warehouses/<warehouseId>/items`
 
 ### Query Parameters
 
